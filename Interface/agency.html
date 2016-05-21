@@ -69,28 +69,12 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-
-										{{#unless logged_in}}
-										<li>
-                        <a class="page-scroll" href="#userlogin">Sign In</a>
+                    <li>
+                        <a class="page-scroll" href="#pricing">Login</a>
                     </li>
-										<li>
-                        <a class="page-scroll" href="#userlogin">Sign Up</a>
-                    </li>
-										{{/unless}}
-
-										{{#if logged_in}}
-										<li>
-                        <a href="/users/sign-out">Sign Out</a>
-                    </li>
-										{{/if}}
-
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-
-
-
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -149,54 +133,27 @@
             </div>
         </div>
     </section>
-
-    <section id="userlogin" class="pricing" style="background-image: url('assets/img/bg-pricing.jpg')">
+    
+    <section id="pricing" class="pricing" style="background-image: url('assets/img/bg-pricing.jpg')">
         <div class="container wow fadeIn">
             <div class="row text-center">
                 <div class="col-lg-12">
                     <h2>LOGIN</h2>
                     <hr class="colored">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quae, laborum, voluptate delectus odio doloremque error porro obcaecati nemo animi ducimus quaerat nostrum? Ab molestiae eaque et atque architecto reiciendis.</p>
-										<form class="form-horizontal" action="/users/login" method="post">
-										<fieldset>
-
-										<!-- Form Name -->
-										<legend>Form Name</legend>
-
-										<!-- Text input-->
-										<div class="form-group">
-											<label class="col-md-4 control-label" for="username">Username</label>
-											<div class="col-md-4">
-											<input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
-
-											</div>
-										</div>
-
-										<!-- Password input-->
-										<div class="form-group">
-											<label class="col-md-4 control-label" for="password">Password</label>
-											<div class="col-md-4">
-												<input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
-
-											</div>
-										</div>
-
-										<!-- Button (Double) -->
-										<div class="form-group">
-											<label class="col-md-4 control-label" for="signup"></label>
-											<div class="col-md-8">
-												<input type="submit" id="signup" name="signup" value="Sign Up" class="btn btn-primary">
-												<input type="submit" id="signin" name="signin" value="Sign In" class="btn btn-primary">
-											</div>
-										</div>
-
-										</fieldset>
-										</form>
-
                 </div>
             </div>
+            
+
+            <div id="userlogin">
+            <iframe style="width: 100%;
+             background-color: #FFFFFF;
+             border-color: transparent;" scrolling="no" src="http://localhost:3000/users/sign-in"> </iframe> 
 
 
+
+
+            </div>
     </section>
     <section class="cta-form bg-dark">
         <div class="container text-center">
